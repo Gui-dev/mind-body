@@ -15,14 +15,108 @@ html, body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(66, 66, 66);
+  scroll-behavior: smooth;
 }
 
 input {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
 @font-face {
-  font-family: 'aronite';
+  font-family: 'argonite';
   src: url('./../fonts/orgonite.woff');
 }
+
+.front-page {
+  color: #FFF;
+  min-height: 100vh;
+  padding: 5%;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation svg {
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 1.5rem;
+}
+
+.logo h1 {
+  font-size: 1rem;
+  font-family: 'argonite', sans-serif;
+  margin-left: 0.5rem;
+}
+
+.links {
+  display: none;
+}
+
+.selling-point {
+  font-family: 'argonite', sans-serif;
+  text-align: center;
+  text-shadow: 0 4px 12px #000;
+  margin-top: 25vh;
+}
+
+.selling-point h1 {
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.ctas {
+  margin-top: 2rem;
+}
+
+.ctas button {
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.216);
+}
+
+.cta-secondary {
+  color: #FFF;
+  background-color: var(--secondary-color);
+}
+
+.cta-main {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+}
+
+.classes {}
+
+.classes-description {}
