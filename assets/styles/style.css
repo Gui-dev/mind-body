@@ -23,6 +23,10 @@ input {
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 h1{
   font-size: 2.5rem;
   line-height: 125%;
@@ -63,6 +67,7 @@ h2 {
 
 .navigation svg {
   cursor: pointer;
+  z-index: 2;
 }
 
 .logo {
@@ -152,6 +157,7 @@ h2 {
 .videos article {
   position: relative;
   margin-top: 2rem;
+  padding: 5%;
 }
 
 .videos article h1 {
@@ -189,4 +195,49 @@ h2 {
 .about img {
   margin-top: 2rem;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 10%;
+  }
+
+  .navigation {
+    margin-top: -5rem;
+  }
+
+  .classes {
+    margin-top: -5rem;
+  }
+
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .videos article h1 {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    font-size: 2rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.49);
+    color: var(--main-color);
+    margin-top: 1rem;
+    padding: 0rem;
+    transform: translate(-50%, 20%);
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .about h1 {
+    text-align: start;
+  }
+
+  .about img {
+    width: 50%;
+  }
 }

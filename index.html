@@ -17,7 +17,6 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <script src="./assets/js/script.js"></script>
     <title>Mind & Body</title>
   </head>
   <body>
@@ -30,9 +29,9 @@
             <h1>Mind & Body</h1>
           </div>
           <div class="links">
-            <a href="#">our story</a>
-            <a href="#">practice</a>
-            <a href="#">classes</a>
+            <a href="#about">our story</a>
+            <a href="#practice">practice</a>
+            <a href="#classes">classes</a>
           </div>
           <svg
             width="44"
@@ -40,10 +39,32 @@
             viewBox="0 0 44 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="line"
           >
-            <line y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
-            <line y1="9" x2="27" y2="9" stroke="white" stroke-width="2" />
-            <line y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
+            <line
+              y1="1"
+              x2="44"
+              y2="1"
+              stroke="white"
+              stroke-width="2"
+              class="line"
+            />
+            <line
+              y1="9"
+              x2="27"
+              y2="9"
+              stroke="white"
+              stroke-width="2"
+              class="line"
+            />
+            <line
+              y1="17"
+              x2="11"
+              y2="17"
+              stroke="white"
+              stroke-width="2"
+              class="line"
+            />
           </svg>
         </nav>
 
@@ -61,31 +82,46 @@
         </section>
       </section>
 
-      <section class="classes">
+      <section class="classes" id="classes">
         <div class="classes-description">
           <h1>Classe tailored for you</h1>
           <h2>It's time to heal your mind and body</h2>
         </div>
 
-        <div class="videos">
+        <div class="videos" id="practice">
           <article class="pilates">
             <h1>Pilates</h1>
-            <video src="./assets/videos/pilates.mp4"></video>
+            <video
+              src="./assets/videos/pilates.mp4"
+              class="video"
+              muted
+              loop
+            ></video>
           </article>
 
           <article class="yoga">
             <h1>Yoga</h1>
-            <video src="./assets/videos/yoga.mp4"></video>
+            <video
+              src="./assets/videos/yoga.mp4"
+              class="video"
+              muted
+              loop
+            ></video>
           </article>
 
           <article class="meditation">
             <h1>Meditation</h1>
-            <video src="./assets/videos/meditation.mp4"></video>
+            <video
+              src="./assets/videos/meditation.mp4"
+              class="video"
+              muted
+              loop
+            ></video>
           </article>
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="our-story">
           <h1>Our Story</h1>
           <p>
@@ -98,5 +134,19 @@
         <img src="./assets/images/our-story.png" alt="Our Story" />
       </section>
     </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+      integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
