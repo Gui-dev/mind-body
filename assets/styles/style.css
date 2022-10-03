@@ -11,11 +11,11 @@
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -120,8 +120,9 @@ h2 {
   margin-top: 2rem;
 }
 
-.ctas button {
+.ctas a {
   font-size: 1rem;
+  text-decoration: none;
   margin: 1rem;
   padding: 1rem;
   border: none;
